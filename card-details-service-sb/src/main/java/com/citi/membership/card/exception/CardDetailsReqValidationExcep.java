@@ -12,6 +12,8 @@ public class CardDetailsReqValidationExcep extends Exception {
 		
 		this.respCode = respCode;
 		this.respMsg  = respMsg;
+
+
 	}
 
 }

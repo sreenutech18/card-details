@@ -11,7 +11,7 @@ public class CardDetailsRequestValidator {
 		
 		if( null == cardNum && cardNum.length() != 15 ) {
 			
-			throw new CardDetailsReqValidationExcep("invalid cardnumer");
+			throw new CardDetailsReqValidationExcep("card001","invalid cardnumer");
 		}
 		
 	}

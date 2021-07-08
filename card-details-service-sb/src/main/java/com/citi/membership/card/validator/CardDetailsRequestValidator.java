@@ -1,12 +1,18 @@
 package com.citi.membership.card.validator;
 
+import com.citi.membership.card.exception.CardDetailsReqValidationExcep;
+
 public class CardDetailsRequestValidator {
 	
 	
 	
-	public void validateRequest() {
+	public void validateRequest(String cardNum) throws CardDetailsReqValidationExcep {
 		
-		//TODO : validate the request , throw the exception if the input is invalid
+		
+		if( null == cardNum && cardNum.length() != 15 ) {
+			
+			throw new CardDetailsReqValidationExcep("invalid cardnumer");
+		}
 		
 	}
 

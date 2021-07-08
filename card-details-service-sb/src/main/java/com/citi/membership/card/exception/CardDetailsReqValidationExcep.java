@@ -1,8 +1,11 @@
 package com.citi.membership.card.exception;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+@Setter
+@Getter
 public class CardDetailsReqValidationExcep extends Exception{
 	
 	private String errorMsg; 

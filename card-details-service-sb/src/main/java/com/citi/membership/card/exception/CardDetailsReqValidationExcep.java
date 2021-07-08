@@ -1,18 +1,19 @@
 package com.citi.membership.card.exception;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 
-@Setter
-@Getter
-public class CardDetailsReqValidationExcep extends Exception{
+@Data
+public class CardDetailsReqValidationExcep extends Exception {
 	
-	private String errorMsg; 
+	private String respCode;
+	private String respMsg; 
 	
-	public CardDetailsReqValidationExcep(String errorMsg) {
+	public CardDetailsReqValidationExcep(String respCode, String respMsg) {
 		
-		this.errorMsg = errorMsg;
+		this.respCode = respCode;
+		this.respMsg  = respMsg;
+
+
 	}
 
 }

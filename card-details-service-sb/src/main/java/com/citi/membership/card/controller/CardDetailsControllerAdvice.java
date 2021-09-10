@@ -6,8 +6,12 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 public class CardDetailsControllerAdvice {
 	
 	
-	//TODO : Handle all the exceptions and prepare the error response
+	@ExceptionHandler(value=BusinessException.class)
+	public ResponseEntity handleException(BusinessException exception){
+		
+		 //todo : handle userdefined exception
+	  	
+	}
 	
 	
-
 }

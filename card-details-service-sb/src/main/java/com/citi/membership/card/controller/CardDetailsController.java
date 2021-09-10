@@ -60,11 +60,6 @@ public class CardDetailsController {
 
 	}
 
-	@RequestMapping(value = "/health", method = RequestMethod.GET, produces = "application/json")
-	@ResponseBody
-	public String healthCheck() {
-
-		return "Service is up and running";
-	}
+	
 
 }

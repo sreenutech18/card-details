@@ -2,7 +2,7 @@
 FROM openjdk:8-jdk-alpine
 
 # Make port  available to the world outside this container
-EXPOSE 8080
+EXPOSE 8081
 
 COPY target/card-details-service-sb-1.0-SNAPSHOT.jar  card-details-service-sb-1.0-SNAPSHOT.jar
 
